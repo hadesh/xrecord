@@ -13,6 +13,7 @@
 		0FB963A71A38C2C700EC40AE /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB963A31A38C2C700EC40AE /* CommandLine.swift */; };
 		0FB963A81A38C2C700EC40AE /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB963A51A38C2C700EC40AE /* Option.swift */; };
 		0FB963A91A38C2C700EC40AE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB963A61A38C2C700EC40AE /* StringExtensions.swift */; };
+		6A6CC8E61E13BA6A00904F24 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6CC8E51E13BA6A00904F24 /* AVFoundation.framework */; };
 		9AE269B81CABF509008D8F75 /* PluginHeaderHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AE269B61CABF509008D8F75 /* PluginHeaderHelper.cpp */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		0FB963A31A38C2C700EC40AE /* CommandLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommandLine.swift; path = CommandLine/CommandLine.swift; sourceTree = SOURCE_ROOT; };
 		0FB963A51A38C2C700EC40AE /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Option.swift; path = CommandLine/Option.swift; sourceTree = SOURCE_ROOT; };
 		0FB963A61A38C2C700EC40AE /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = CommandLine/StringExtensions.swift; sourceTree = SOURCE_ROOT; };
+		6A6CC8E51E13BA6A00904F24 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9AE269B51CABF509008D8F75 /* PluginHeaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginHeaderHelper.h; sourceTree = "<group>"; };
 		9AE269B61CABF509008D8F75 /* PluginHeaderHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginHeaderHelper.cpp; sourceTree = "<group>"; };
 		9AE269B71CABF509008D8F75 /* PluginHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PluginHeader.h; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6CC8E61E13BA6A00904F24 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 			children = (
 				0FB9639B1A38C13000EC40AE /* xrecord */,
 				0FB9639A1A38C13000EC40AE /* Products */,
+				6A6CC8E41E13BA6A00904F24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +102,14 @@
 			name = CommandLine;
 			sourceTree = "<group>";
 		};
+		6A6CC8E41E13BA6A00904F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A6CC8E51E13BA6A00904F24 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +143,7 @@
 				TargetAttributes = {
 					0FB963981A38C13000EC40AE = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -253,6 +266,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "xrecord/xrecord-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -263,6 +277,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "xrecord/xrecord-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
